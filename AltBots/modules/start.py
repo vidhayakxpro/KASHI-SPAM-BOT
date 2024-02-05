@@ -9,7 +9,7 @@ START_BUTTON = [
     ],
     [
         Button.url("🍫 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 🍫", "https://t.me/I_C2H5OH_I"),
-        Button.url("🍹 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 🍹", "https://t.me/FRANCIUM_OP")
+        Button.url("🍹 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 🍹", "https://t.me/APNI_MEHFIL")
     ],
     [
         Button.url("ᵛⁱᵖ°🫧𓆩𝐒ĦƖѴΔ𓆪•𝅃꯭ 🎫", "https://t.me/I_C2H5OH_I")
