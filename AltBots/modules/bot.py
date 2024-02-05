@@ -21,10 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"» __™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍__")
+        altron = await e.reply(f"» __ᵛ ⁱ ᵖ° 🫧 𓆩𝐒 Ħ Ɩ Ѵ Δ𓆪•𝅃꯭ 🎫__")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"💫🥀 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍\n» `{mp} 𝙼𝚂`")
+        await altron.edit(f"ᵛ ⁱ ᵖ° 🫧 𓆩𝐒 Ħ Ɩ Ѵ Δ𓆪•𝅃꯭ 🎫\n» `{mp} 𝙼𝚂`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`🥀𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 𝙾𝚇𝚈𝙶𝙴𝙽 𝙱𝙾𝚃𝚂🥀...`")
+        await e.reply(f"`🥀𝙒𝙖𝙞𝙩 𝙆𝙧𝙤 𝙎𝙩𝙖𝙧𝙩 𝙃𝙤 𝙍𝙝𝙚 𝘽𝙤𝙩𝙨🥀...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -99,7 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"» __𝙰𝙳𝙳𝙸𝙽𝙶 𝚄𝚂𝙴𝚁 𝙰𝚂 𝙾𝚇𝚈𝙶𝙴𝙽 💘𝚂𝚄𝙳𝙾💘...__🚀🚀")
+        ok = await event.reply(f"» __𝘼𝙙𝙙𝙞𝙣𝙜 𝙪𝙨𝙚𝙧 𝙖𝙨 𝙁𝙍𝘼𝙉𝘾𝙄𝙐𝙈 🦋𝙨𝙪𝙙𝙤🦋...__🚀🚀")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -113,18 +113,18 @@ async def addsudo(event):
             reply_msg = await event.get_reply_message()
             target = reply_msg.sender_id
         except:
-            await ok.edit("» 🌺𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝚄𝚂𝙴𝚁🌺 !!")
+            await ok.edit("» 🌺𝙍𝙚𝙥𝙡𝙮 𝙏𝙤 𝘼 𝙐𝙨𝙚𝙧🌺 !!")
             return
 
         if str(target) in sudousers:
-            await ok.edit("» 🌸𝚃𝙷𝙸𝚂 𝚄𝚂𝙴𝚁 𝙸𝚂 𝙰𝙻𝚁𝙴𝙰𝙳𝚈 𝙰 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁 𝙾𝙵 𝙾𝚇𝚈𝙶𝙴𝙽 𝙱𝙾𝚃𝚂🌸 !!")
+            await ok.edit("» 🌸𝙏𝙝𝙞𝙨 𝙐𝙨𝙚𝙧 𝙄𝙨 𝘼𝙡𝙧𝙚𝙖𝙙𝙮 𝘼 𝙎𝙪𝙙𝙤 𝙐𝙨𝙚𝙧 𝙊𝙛 𝙁𝙧𝙖𝙣𝙘𝙞𝙪𝙢 𝘽𝙤𝙩𝙨🌸 !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
             else:
                 newsudo = f"{target}"
-            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 💖𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 𝙾𝚇𝚈𝙶𝙴𝙽 𝙱𝙾𝚃𝚂💖...`")
+            await ok.edit(f"» **𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁**: `{target}`\n» 💖𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙁𝙧𝙖𝙣𝙘𝙞𝙪𝙢 𝘽𝙤𝙩𝙨💖...`")
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» 𝚂𝙾𝚁𝚁𝚈, 𝙾𝙽𝙻𝚈 𝙾𝚆𝙽𝙴𝚁 𝙲𝙰𝙽 𝙰𝙲𝙴𝚂𝚂 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳.")
+        await event.reply("» 𝘽𝙝𝙖𝙞 𝙏𝙪 𝙈𝙚𝙧𝙖 𝙊𝙬𝙣𝙚𝙧 𝙉𝙝𝙞 𝙃𝙖𝙞, 𝙊𝙣𝙡𝙮 𝙈𝙮 𝙊𝙬𝙣𝙚𝙧 𝘾𝙖𝙣 𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙝𝙞𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙.")
