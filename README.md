@@ -2,7 +2,7 @@
 
 <h4 align="center"> 𝐀 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋 𝐒𝐏𝐀𝐌𝐁𝐎𝐓𝐒</h4>
 
-<p align="center"><a href="https://t.me/BWANDARLOK"><img src="https://graph.org/file/b0825ba6490d2aa6a6afd.jpg" width="400"></a></p>0
+<p align="center"><a href="https://t.me/APNI_MEHFIL"><img src="https://te.legra.ph/file/495b60ee2d553965059e5.jpg" width="400"></a></p>0
 
 
 > ⭐️ Thanks to everyone for using this op ™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍. That is the greatest pleasure we have !
@@ -15,7 +15,7 @@
 <summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ</b></summary>
 <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/PRADHAN474/ALSPAM)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://https://github.com/FRANCIUM444/FRANCIUM.git)
 
 </details>
 
